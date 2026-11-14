@@ -26,3 +26,10 @@ To run this project locally and bypass cloud IP blocks:
 2. Install dependencies: `pip install -r requirements.txt`
 3. Create a `.env` file with your `GROQ_API_KEY`.
 4. Run the app: `python -m streamlit run app.py`
+
+## 🚧 In Progress & Upcoming Features
+
+* **Official Search API Migration (Hotfix in progress):** Swapping the free `duckduckgo-search` scraper for an enterprise-grade API (like Tavily Search) to resolve Streamlit Cloud IP rate-limiting and ensure stable, unblocked web execution.
+* **Model Context Protocol (MCP) Integration:** Implementing a standardized MCP client to allow the LangGraph backend to securely interface with local filesystem servers and external enterprise tools over standard I/O.
+* **Multi-Agent Subgraph Architecture:** Evolving the single-agent graph into a "Supervisor Node" architecture that intelligently delegates specialized tasks to independent, domain-specific sub-agents (e.g., separating a dedicated Research Agent from a Math Agent).
+* **Dynamic Chat State UI:** Adding background LLM calls to automatically map raw SQLite thread UUIDs into clean, human-readable chat titles in the sidebar based on the context of the user's first prompt.
